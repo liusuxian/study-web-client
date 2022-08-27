@@ -1,3 +1,11 @@
+<!--
+ * @Author: liusuxian 382185882@qq.com
+ * @Date: 2022-08-26 14:34:40
+ * @LastEditors: liusuxian 382185882@qq.com
+ * @LastEditTime: 2022-08-26 17:05:33
+ * @FilePath: /study-web-client/frameset/frameset-note.md
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
 ### 创建 frameset 框架网页的步骤
 ```
 1、创建各个子窗口对应的html文件
@@ -7,7 +15,7 @@
 ```html
 <html>
   <frameset cols="25%,50%,*" rows="50%,*" border="5">
-    <frame src="top.html">
+    <frame src="top.html" />
     ......
   </frameset>
 </html>

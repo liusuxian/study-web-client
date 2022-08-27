@@ -2,7 +2,7 @@
  * @Author: liusuxian 382185882@qq.com
  * @Date: 2022-08-26 16:37:01
  * @LastEditors: liusuxian 382185882@qq.com
- * @LastEditTime: 2022-08-26 16:37:10
+ * @LastEditTime: 2022-08-26 17:05:53
  * @FilePath: /study-web-client/frameset/index.html
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -22,10 +22,18 @@
   <title>left</title>
 </head>
 
-<body bgcolor="yellow">
-  <h3><a href="page1.html">翻译服务</a></h3>
-  <h3><a href="page2.html">网站建设</a></h3>
-  <h3><a href="page3.html">服务流程</a></h3>
-</body>
+<frameset rows="30%,*">
+  <frame src="top.html" name="topFrame" />
+  <frameset cols="20%,*">
+    <frame src="left.html" name="leftFrame" noresize="noresize" />
+    <frame src="page1.html" name="rightFrame" />
+  </frameset>
+  <noframes>
+
+    <body>
+      此浏览器不支持框架！
+    </body>
+  </noframes>
+</frameset>
 
 </html>
